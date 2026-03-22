@@ -1,0 +1,1 @@
+cl /EHsc main.cpp bus.cpp cpu.cpp registers.cpp /Fe:emulator.exe
