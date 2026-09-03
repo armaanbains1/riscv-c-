@@ -9,9 +9,13 @@ class bus{
 
     private:
         
-        std::vector<std::uint8_t> * memory;
+        std::vector<std::uint8_t> * memoryMain;
     
     public:
+
+        bus(std::vector<std::uint8_t> * memory);
+
+        void dumpMemory();
 
         //Word Loading/Storing
         std::uint32_t loadWord(int address);
